@@ -1,3 +1,5 @@
+// Basic concept of setInterval
+
 import React from "react";
 
 const Interval = () => {
@@ -7,10 +9,10 @@ const Interval = () => {
     return () => clearInterval(id);
   }, [count]);
 
-  React.useEffect(() => {
-    const id = setInterval(() => setCount(c => c+1), 1000);
-    return () => clearInterval(id);
-  }, []);
+  // React.useEffect(() => {
+  //   const id = setInterval(() => setCount(c => c+1), 1000);
+  //   return () => clearInterval(id);
+  // }, []);
 
   return <>{count}</>;
 };
